@@ -35,6 +35,18 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* Gradient layer */
+.gradient-layer {
+    position: absolute;
+    top: 100%; /* Position the gradient layer below the header */
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height as needed */
+    background: linear-gradient(to right, #007bff 75%, white);
+    border-radius: 10px 10px 0 0; /* Match the border-radius of the container */
+    z-index: 1; /* Ensure the gradient layer is below the header */
+}
+
 /* Form styles */
 form {
     background-color: #ffb6ec;
@@ -74,6 +86,17 @@ select {
     color: #fff;
 }
 
+.bg-gradient {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    transition: background 0.3s;
+}
+
+.bg-gradient:hover {
+    background-color: #0261c8;
+    color: #fff;
+}
 
 /* Memes container styles */
 .memes-container {
@@ -92,6 +115,25 @@ select {
 
 .meme-img:hover {
     transform: scale(1.05);
+}
+
+/* Pagination styles */
+.pagination-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgb(250, 62, 175), rgb(255, 217, 29));
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 0; /* Remove border-radius to fit across the screen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+.pagination-component ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .page-link {
@@ -133,4 +175,10 @@ select {
     width: 400px; /* Adjust the width as needed */
     height: auto; /* Automatically adjust the height to maintain aspect ratio */
     margin-top: 50px;
+}
+
+/* New CSS rules for the area where GIFs render */
+.gifs-background {
+    background-color: #4488ed; /* Set the background color for the area where GIFs render */
+    padding: 20px; /* Add padding as needed */
 }
