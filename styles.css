@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001530;
+    color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(89, 157, 216); /* Set background to original blue color */
+    position: relative; /* Add relative positioning to use absolute positioning */
+}
+
+/* Header styles */
+.header-container {
+    position: relative; /* Ensure the header container is positioned relatively */
+    z-index: 2; /* Ensure the header is above the gradient layer */
+    background-color: #001530;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Form styles */
+form {
+    background-color: #ffb6ec;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Memes container styles */
+.memes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meme-img {
+    height: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.meme-img:hover {
+    transform: scale(1.05);
+}
+
+.page-link {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    margin: 0 3px; /* Adjust margin for spacing between buttons */
+}
+
+/* Pagination items */
+.page-item {
+    list-style: none;
+    display: inline-block; /* Display items horizontally */
+}
+
+.page-link:hover {
+    background-color: #007bff;
+    color: #191818;
+}
+
+/* Footer styles */
+.page-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+.page-footer img {
+    width: 150px;
+}
+
+/* styles.css */
+
+.cgologo {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    margin-top: 50px;
+}
