@@ -117,6 +117,12 @@ select {
     transform: scale(1.05);
 }
 
+.img-override {
+    width: 100% !important; /* Ensures width is always 100% of the container */
+    min-width: 100%;        /* Ensures the image can scale up beyond its natural size */
+    height: auto;           /* Maintains the aspect ratio */
+  }
+
 /* Pagination styles */
 .pagination-component {
     display: flex;

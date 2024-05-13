@@ -115,26 +115,51 @@ function renderPagination(paginationInfo) {
     document.querySelector(".js-pagination-bottom").innerHTML = html;
 }
 
-function renderGifs(response) {
-    let result = "";
 
+function clearColumns() {
+    const columns = document.querySelectorAll('.js-memes-container-col');
+    columns.forEach(col => {
+        col.innerHTML = ''; // Clears all child elements
+    });
+}
+
+
+function appendImagesToShortestColumn(response) {
+    const cols = document.querySelectorAll('.js-memes-container-col');
+    let colHeights = Array.from(cols, () => 0); // Initialize heights of columns to zero
+
+    function findShortestDiv() {
+        let minHeight = Math.min(...colHeights);
+        let shortestIndex = colHeights.indexOf(minHeight);
+        return cols[shortestIndex];
+    }
+
+    response.data.forEach(meme => {
+        let img = document.createElement('img');
+        img.onload = () => {
+            let shortestDiv = findShortestDiv();
+            shortestDiv.appendChild(img);
+            let divIndex = Array.from(cols).indexOf(shortestDiv);
+            colHeights[divIndex] += img.clientHeight; // Update the running total height for the column
+
+            // Optional: Adjust layout or styles if necessary after image append
+        };
+        img.src = meme.images.original.url;
+        img.alt = meme.alt_text;
+        img.className = 'img-fluid img-override';
+    });
+}
+
+function renderGifs(response) {
     if (response.data.length === 0) {
         renderError("No results.");
     } else {
-        for (let meme of response.data) {
-            result += `
-                <img 
-                    src="${meme.images.original.url}" 
-                    alt="${meme.alt_text}" 
-                    class="meme-img" />
-            `;
-        }
-
-        document.querySelector(".js-memes-container").innerHTML = result;
-
+        appendImagesToShortestColumn(response);
         renderPagination(response.pagination);
     }
 }
+
+
 
 function renderError(message) {
     document.querySelector(".js-memes-container").innerHTML = `
@@ -159,7 +184,8 @@ function formSubmitted(event) {
     /* set the global state */
     memesPerPage = document.querySelector("[name=meme-count]").value;
     currentPage = 1;
-
+    
+    clearColumns();
     getMemes();
 }
 
