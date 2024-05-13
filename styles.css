@@ -49,7 +49,7 @@ h1 {
 
 /* Form styles */
 form {
-    background-color: #ffb6ec;
+    background-color: #fa7ad8;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -172,10 +172,39 @@ select {
 /* styles.css */
 
 .cgologo {
-    width: 400px; /* Adjust the width as needed */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto 10px; /* Center logo and provide spacing */
 }
+
+/* Container for side logos */
+.logo-stream-left, .logo-stream-right {
+    position: absolute;
+    width: 100px; /* Set a fixed width for the side logos */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Center align vertically with the main logo */
+}
+
+.logo-stream-left {
+    left: 10px; /* Positioning from the left side */
+}
+
+.logo-stream-right {
+    right: 10px; /* Positioning from the right side */
+}
+
+.side-logo {
+    display: block; /* Stack logos vertically */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Spacing between logos */
+    opacity: 0.8; /* Slightly transparent for a softer appearance */
+}
+
+.side-logo:hover {
+    opacity: 1; /* Full opacity on hover for focus */
+}
+
 
 /* New CSS rules for the area where GIFs render */
 .gifs-background {
