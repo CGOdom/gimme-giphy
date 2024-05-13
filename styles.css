@@ -3,14 +3,14 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #001530;
+    background-color: #000000;
     color: #000000;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     background-color: rgb(89, 157, 216); /* Set background to original blue color */
     position: relative; /* Add relative positioning to use absolute positioning */
 }
@@ -19,7 +19,7 @@ body {
 .header-container {
     position: relative; /* Ensure the header container is positioned relatively */
     z-index: 2; /* Ensure the header is above the gradient layer */
-    background-color: #001530;
+    background-color: #000000;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -165,7 +165,7 @@ select {
 /* Footer styles */
 .page-footer {
     text-align: center;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     padding: 20px 0;
     background-color: #000000;
     color: #fff;
@@ -180,11 +180,11 @@ select {
 .cgologo {
     width: 400px; /* Adjust the width as needed */
     height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 /* New CSS rules for the area where GIFs render */
 .gifs-background {
-    background-color: #4488ed; /* Set the background color for the area where GIFs render */
-    padding: 20px; /* Add padding as needed */
+    background-color: #000000; /* Set the background color for the area where GIFs render */
+    /*padding: 20px; /* Add padding as needed */
 }
