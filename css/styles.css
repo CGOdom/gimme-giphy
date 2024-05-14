@@ -129,7 +129,6 @@ select {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(180deg, rgb(250, 62, 175), rgb(255, 217, 29));
-    padding: 10px 20px; /* Adjust padding as needed */
     border-radius: 0; /* Remove border-radius to fit across the screen */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
 }
@@ -205,4 +204,11 @@ select {
 .gifs-background {
     background-color: #000000; /* Set the background color for the area where GIFs render */
     /*padding: 20px; /* Add padding as needed */
+}
+
+.space-grotesk-h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
