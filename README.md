@@ -1,11 +1,8 @@
 # Project II "gimme giphy"
 
 
-!! TODO - CREATE NAVBAR !!
 
-
-
-Hosting Link: https://cgodom.github.io/Giphy/
+Hosting Link: https://cgodom.github.io/gimme-giphy/
 
 
 
