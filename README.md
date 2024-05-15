@@ -1,7 +1,7 @@
 # Project II "gimme giphy"
 
 
-TODO* WIREFRAMES, NAV BAR !!
+NAV BAR !!
 
 
 
