@@ -119,14 +119,14 @@ function renderPagination(paginationInfo) {
 function clearColumns() {
     const columns = document.querySelectorAll('.js-memes-container-col');
     columns.forEach(col => {
-        col.innerHTML = ''; // Clears all child elements
+        col.innerHTML = ''; 
     });
 }
 
 
 function appendImagesToShortestColumn(response) {
     const cols = document.querySelectorAll('.js-memes-container-col');
-    let colHeights = Array.from(cols, () => 0); // Initialize heights of columns to zero
+    let colHeights = Array.from(cols, () => 0); 
 
     function findShortestDiv() {
         let minHeight = Math.min(...colHeights);
@@ -140,9 +140,9 @@ function appendImagesToShortestColumn(response) {
             let shortestDiv = findShortestDiv();
             shortestDiv.appendChild(img);
             let divIndex = Array.from(cols).indexOf(shortestDiv);
-            colHeights[divIndex] += img.clientHeight; // Update the running total height for the column
+            colHeights[divIndex] += img.clientHeight; 
 
-            // Optional: Adjust layout or styles if necessary after image append
+            
         };
         img.src = meme.images.original.url;
         img.alt = meme.alt_text;
