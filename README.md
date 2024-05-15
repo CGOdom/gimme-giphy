@@ -1,11 +1,9 @@
-# Giphy Search
+# Project II "gimme giphy"
 
 
-TODO* WIREFRAMES, RENAME FILES, NAV BAR !!
+TODO* WIREFRAMES, NAV BAR !!
 
 
-
-GitHub Link: https://github.com/CGOdom/Giphy
 
 Hosting Link: https://cgodom.github.io/Giphy/
 
@@ -37,8 +35,7 @@ Future Improvement Ideas:
 1. Advanced Search Filters: Add filters for rating or type.
 2. Favorites and History: Enable saving favorites and viewing search history.
 3. Social Sharing: Implement sharing options for social media.
-4. Responsive Design Enhancements: Optimize for mobile devices.
-5. User Settings: Allow customization of default views and UI themes.
+4. User Settings: Allow customization of default views and UI themes.
 
 
 
@@ -65,4 +62,4 @@ User Stories:
 
 
 
-The "Gimme Giphy" application serves a wide range of users, from casual browsers to social media enthusiasts, by providing tailored GIF discovery and sharing tools. Key features like advanced search filters and social media integration enhance usability and engagement. This commitment to versatility and user-friendliness makes it a valuable tool for enriching digital communication and content curation.
+The "gimme giphy" application serves a wide range of users, from casual browsers to social media enthusiasts, by providing tailored GIF discovery and sharing tools. Key features like advanced search filters and social media integration enhance usability and engagement. This commitment to versatility and user-friendliness makes it a valuable tool for enriching digital communication and content curation.

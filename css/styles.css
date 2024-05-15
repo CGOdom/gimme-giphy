@@ -1,24 +1,23 @@
 /* styles.css */
 
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
-    color: #000000;
+    color: #000000; 
 }
 
 .container {
     max-width: 100%;
     margin: auto;
     padding: 0px;
-    background-color: rgb(89, 157, 216); /* Set background to original blue color */
-    position: relative; /* Add relative positioning to use absolute positioning */
+    background-color: rgb(89, 157, 216); 
+    position: relative; 
 }
 
 /* Header styles */
 .header-container {
-    position: relative; /* Ensure the header container is positioned relatively */
-    z-index: 2; /* Ensure the header is above the gradient layer */
+    position: relative; 
+    z-index: 2; 
     background-color: #000000;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,21 +34,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Gradient layer */
-.gradient-layer {
-    position: absolute;
-    top: 100%; /* Position the gradient layer below the header */
-    left: 0;
-    width: 100%;
-    height: 50px; /* Adjust the height as needed */
-    background: linear-gradient(to right, #007bff 75%, white);
-    border-radius: 10px 10px 0 0; /* Match the border-radius of the container */
-    z-index: 1; /* Ensure the gradient layer is below the header */
-}
-
 /* Form styles */
 form {
-    background-color: #fa7ad8;
+    background-color: #03C03C;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -76,7 +63,7 @@ select {
 .btn {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0; 
     cursor: pointer;
     font-size: 16px;
 }
@@ -94,8 +81,9 @@ select {
 }
 
 .bg-gradient:hover {
-    background-color: #0261c8;
-    color: #fff;
+    background-color: #004526;
+    color: #ffffff;
+    border: 1px solid #000000;
 }
 
 /* Memes container styles */
@@ -118,47 +106,40 @@ select {
 }
 
 .img-override {
-    width: 100% !important; /* Ensures width is always 100% of the container */
-    min-width: 100%;        /* Ensures the image can scale up beyond its natural size */
-    height: auto;           /* Maintains the aspect ratio */
-  }
+    width: 100% !important; 
+    min-width: 100%;        
+    height: auto;           
+}
 
 /* Pagination styles */
 .pagination-component {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(180deg, rgb(250, 62, 175), rgb(255, 217, 29));
-    border-radius: 0; /* Remove border-radius to fit across the screen */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    background-color: #000000; 
+    border-radius: 0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .pagination-component ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
 }
 
 .page-link {
     padding: 5px 10px;
-    text-decoration: none;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    color: #007bff;
-    margin: 0 3px; /* Adjust margin for spacing between buttons */
-}
-
-/* Pagination items */
-.page-item {
-    list-style: none;
-    display: inline-block; /* Display items horizontally */
+    text-decoration:none;
+    border-radius: 0;
+    color: #ffffff; 
+    margin: 0 3px; 
 }
 
 .page-link:hover {
-    background-color: #007bff;
-    color: #191818;
+    background-color: #f5fff7;
+    color: #000000;
 }
 
 /* Footer styles */
@@ -173,42 +154,38 @@ select {
     width: 150px;
 }
 
-/* styles.css */
-
 .cgologo {
-    width: 400px; /* Adjust the width as needed */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    width: 400px; 
+    height: auto; 
 }
 
 .logo-stream-left {
-    left: 10px; /* Positioning from the left side */
+    left: 10px; 
 }
 
 .logo-stream-right {
-    right: 10px; /* Positioning from the right side */
+    right: 10px; 
 }
 
 .side-logo {
-    display: block; /* Stack logos vertically */
-    width: 100%; /* Full width of the container */
-    margin-bottom: 10px; /* Spacing between logos */
-    opacity: 0.8; /* Slightly transparent for a softer appearance */
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    opacity: 0.8; 
 }
 
 .side-logo:hover {
-    opacity: 1; /* Full opacity on hover for focus */
+    opacity: 1; 
 }
-
 
 /* New CSS rules for the area where GIFs render */
 .gifs-background {
-    background-color: #000000; /* Set the background color for the area where GIFs render */
-    /*padding: 20px; /* Add padding as needed */
+    background-color: #000000;
 }
 
 .space-grotesk-h1 {
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
