@@ -116,10 +116,13 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000; 
-    border-radius: 0; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 100%; /* Ensures the flex container spans the full width */
+    background-color: #000000;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#ffffff;
 }
+
 
 .pagination-component ul {
     display: flex;
