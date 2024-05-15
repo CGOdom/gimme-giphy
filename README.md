@@ -1,7 +1,7 @@
 # Project II "gimme giphy"
 
 
-NAV BAR !!
+!! TODO - CREATE NAVBAR !!
 
 
 
@@ -48,17 +48,17 @@ User Types:
 
 User Stories:
 
-- WHO: Casual Browser
-- WHAT: Wants to quickly find and view GIFs related to a specific theme or emotion.
-- WHY: To enjoy and explore visual content without specific search criteria.
+1. Casual Browser
+- Wants to quickly find and view GIFs related to a specific theme or emotion.
+- To enjoy and explore visual content without specific search criteria.
 
-- WHO: Content Curator
-- WHAT: Requires advanced search filters such as content rating and GIF type to locate highly specific GIFs.
-- WHY: To efficiently find and use content that fits specific thematic or audience requirements, improving their productivity and content quality.
+2. Content Curator
+- Requires advanced search filters such as content rating and GIF type to locate highly specific GIFs.
+- To efficiently find and use content that fits specific thematic or audience requirements, improving their productivity and content quality.
 
-- WHO: Social Media User
-- WHAT: Wants the ability to share GIFs directly from the application to various social media platforms.
-- WHY: To streamline the process of content sharing, facilitating better engagement with their social media audience.
+3. Social Media User
+- Wants the ability to share GIFs directly from the application to various social media platforms.
+- To streamline the process of content sharing, facilitating better engagement with their social media audience.
 
 
 
