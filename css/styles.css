@@ -1,194 +1,194 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: #000000; 
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #000000;
 }
 
 .container {
-    max-width: 100%;
-    margin: auto;
-    padding: 0px;
-    background-color: rgb(89, 157, 216); 
-    position: relative; 
+  max-width: 100%;
+  margin: auto;
+  padding: 0px;
+  background-color: rgb(89, 157, 216);
+  position: relative;
 }
 
 /* Header styles */
 .header-container {
-    position: relative; 
-    z-index: 2; 
-    background-color: #000000;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  background-color: #000000;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 h1 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 10px;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 /* Form styles */
 form {
-    background-color: #03C03C;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #03c03c;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-row {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 0; 
-    cursor: pointer;
-    font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .btn-primary {
-    background-color: #007bff;
-    color: #fff;
+  background-color: #007bff;
+  color: #fff;
 }
 
 .bg-gradient {
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    transition: background 0.3s;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  transition: background 0.3s;
 }
 
 .bg-gradient:hover {
-    background-color: #004526;
-    color: #ffffff;
-    border: 1px solid #000000;
+  background-color: #004526;
+  color: #ffffff;
+  border: 1px solid #000000;
 }
 
 /* Memes container styles */
 .memes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .meme-img {
-    height: 200px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  height: 200px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .meme-img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .img-override {
-    width: 100% !important; 
-    min-width: 100%;        
-    height: auto;           
+  width: 100% !important;
+  min-width: 100%;
+  height: auto;
 }
 
 /* Pagination styles */
 .pagination-component {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensures the flex container spans the full width */
-    background-color: #000000;
-    border-radius: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures the flex container spans the full width */
+  background-color: #000000;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
 }
 
-
 .pagination-component ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; 
-    padding: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .page-link {
-    padding: 5px 10px;
-    text-decoration:none;
-    border-radius: 0;
-    color: #ffffff; 
-    margin: 0 3px; 
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 0;
+  color: #ffffff;
+  margin: 0 3px;
 }
 
 .page-link:hover {
-    background-color: #f5fff7;
-    color: #000000;
+  background-color: #f5fff7;
+  color: #000000;
 }
 
 /* Footer styles */
 .page-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #000000;
-    color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000;
+  color: #fff;
 }
 
 .page-footer img {
-    width: 150px;
+  width: 150px;
 }
 
 .cgologo {
-    width: 400px; 
-    height: auto; 
+  width: 400px;
+  height: auto;
 }
 
 .logo-stream-left {
-    left: 10px; 
+  left: 10px;
 }
 
 .logo-stream-right {
-    right: 10px; 
+  right: 10px;
 }
 
 .side-logo {
-    display: block; 
-    width: 100%; 
-    margin-bottom: 10px; 
-    opacity: 0.8; 
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
 }
 
 .side-logo:hover {
-    opacity: 1; 
+  opacity: 1;
 }
 
 /* New CSS rules for the area where GIFs render */
 .gifs-background {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .space-grotesk-h1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
