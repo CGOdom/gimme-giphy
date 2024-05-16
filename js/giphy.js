@@ -1,4 +1,4 @@
-const API_KEY = "DXMbGBGY2tkNUrfZ6JQY6U3PnZLf6Jpg";
+const API_KEY = "pdb5Eu5qEpWxNP5DiraIOHIhH5oZLniq";
 const API_PREFIX = "https://api.giphy.com/v1/gifs/search?api_key=";
 const API_SETTINGS = "&rating=g&lang=en&bundle=messaging_non_clips";
 
